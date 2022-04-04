@@ -1,8 +1,9 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Shop</title>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
@@ -17,7 +18,6 @@
     <title>Bootstrap Base Template</title>
   </head>
   <body>
-
     <!-- Navigation bar, adapted from https://getbootstrap.com/docs/5.1/components/navbar/ -->
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
@@ -30,7 +30,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a  href="index.html" class="nav-link active" aria-current="page">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="shop.html">Shop&nbsp;</a>
@@ -56,23 +56,223 @@
       </div>
     </nav>
     <!-- End of navigation bar -->
-<!-- Start of section adapted from https://getbootstrap.com/docs/5.1/examples/album/ -->
-    <header class="py-2 py-md-4 py-lg-5 text-center container-fluid bg-gradient text-light">
-      <div class="row">
-        <div class="col-md-8 col-lg-6 mx-auto">
-          <h1 class="fw-light">HEX</h1>
-          <p class="lead">Customized sneakers - your art walking the world under thousands of eyes</p>
-          <p>
-            <a href="#" class="btn btn-lg btn-warning">Submit your art</a>
-            <a href="#" class="btn btn-lg btn-danger">Join our community</a>
-          </p>
+
+    <!-- Start of carrousel, adapted from https://getbootstrap.com/docs/5.1/components/carousel/ -->
+    <section class="container-fluid p-0">
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+			 <!-- <video width="320" height="240" autoplay>
+ 			 <source src="images/videos/funky.mp4" class="d-block mx-auto w-100" alt="..."> 
+  			<source src="images/videos/funky.mp4" type="video/ogg">
+ 			 Your browser does not support the video tag.
+				</video> -->
+           <video src="images/videos/funky.mp4" class="d-block mx-auto w-100" alt="..." autoplay muted> </video>
+            <div class="carousel-caption">
+              <h3 class="d-none d-md-block">Inspire</h3>
+              <p>
+                <a href="#" class="btn btn-outline-light my-md-2">SHOP NOW<span class="d-inline d-md-none"> about Horizon</span></a>
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <video src="images/videos/start.mp4" class="d-block mx-auto w-100" alt="..." autoplay muted> </video>
+            <div class="carousel-caption">
+              <h3 class="d-none d-md-block">Aspire</h3>
+              <p>
+                <a href="#" class="btn btn-outline-light my-md-2">SUBMIT YOUR ART<span class="d-inline d-md-none"> about Ocean</span></a>
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+             <video src="images/videos/kiss.mp4" class="d-block mx-auto w-100" alt="..." autoplay muted> </video>
+            <div class="carousel-caption">
+              <h3 class="d-none d-md-block">Connect</h3>
+              <p>
+                <a href="#" class="btn btn-outline-light my-md-2">JOIN OUR COMMUNITY<span class="d-inline d-md-none"> about Frontier</span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-    </header>
-    <!-- End of hero section -->
+    </section>
+    <!-- End of carrousel -->
+    <!-- A grid with cards
+      Learn about grids at: https://getbootstrap.com/docs/5.1/layout/grid/
+      Learn about cards at: https://getbootstrap.com/docs/5.1/components/card/
+    -->
+    <main class="container py-4">
+      <div class="row g-3 justify-content-evenly">
+ <!-- shop -->
+		  <div class="shop">
+		  <div class="card py-1 py-md-3 py-lg-5 text-center text-black shop">
+          <div class="card-body">
+			  <p> SHOP </p>
+			 </div>
+		 </div>
+		</div>  
+ <!-- Shop -->
+		  
+        <!-- Card #1 -->
+        <div class="col-sm-6 col-lg-4 col-xl-3">
+			
+          <div class="card shadow h-100">
+            <img class="img-fluid" src="images/placeholder.png" alt="Placeholder Image">
+            <div class="card-body">
+              <h5 class="card-title">Card #1</h5>
+              <p class="card-text">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+            </div>
+            <div class="card-footer p-2 text-end">
+              <a href="#" class="btn btn-primary">Learn more</a>
+            </div>
+          </div>
+        </div>
 
-</head>
+        <!-- Card #2 -->
+        <div class="col-sm-6 col-lg-4 col-xl-3">
+          <div class="card shadow h-100">
+            <img class="img-fluid" src="images/placeholder.png" alt="Placeholder Image">
+            <div class="card-body">
+              <h5 class="card-title">Card #2</h5>
+              <p class="card-text">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum.</p>
+            </div>
+            <div class="card-footer p-2 text-end">
+              <a href="#" class="btn btn-primary">Learn more</a>
+            </div>
+          </div>
+        </div>
 
-<body>
-</body>
+        <!-- Card #3 -->
+        <div class="col-sm-6 col-lg-4 col-xl-3">
+          <div class="card shadow h-100">
+            <img class="img-fluid" src="images/placeholder.png" alt="Placeholder Image">
+            <div class="card-body">
+              <h5 class="card-title">Card #3</h5>
+              <p class="card-text">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+            </div>
+            <div class="card-footer p-2 text-end">
+              <a href="#" class="btn btn-primary">Learn more</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card #4 -->
+        <div class="col-sm-6 col-lg-4 col-xl-3">
+          <div class="card shadow h-100">
+            <img class="img-fluid" src="images/placeholder.png" alt="Placeholder Image">
+            <div class="card-body">
+              <h5 class="card-title">Card #4</h5>
+              <p class="card-text">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum.</p>
+            </div>
+            <div class="card-footer p-2 text-end">
+              <a href="#" class="btn btn-primary">Learn more</a>
+            </div>
+          </div>
+        </div>
+		      <!-- A footer with socials -->
+	 
+   <footer class="shadow-lg mt-5 py-4 bg-body">
+      <div class="container d-flex justify-content-between align-items-center">
+        <!--footer 2 -->
+	    <div class="container">
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-2">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-2">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-2">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-4 offset-1">
+        <form>
+          <h5>Subscribe to our newsletter</h5>
+          <p>Monthly digest of whats new and exciting from us.</p>
+          <div class="d-flex w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+            <button class="btn btn-primary" type="button">Subscribe</button>
+          </div>
+        </form>
+		  <ul class="list-unstyled d-flex align-items-center opacity-75">
+          <li>
+            <a href="https://www.facebook.com/bredauniversityas" target="_blank">
+              <img class="m-2" src="images/facebook.svg" alt="Follow us on" width="26">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/school/bredauniversityas/" target="_blank">
+              <img class="m-2" src="images/linkedin.svg" alt="Follow us on LinkedIn" width="26">
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/bredauas" target="_blank">
+              <img class="m-2" src="images/twitter.svg" alt="Follow us on Twitter" width="26">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/BredaUniversityofAppliedSciences" target="_blank">
+              <img class="m-2" src="images/youtube.svg" alt="Follow us on YouTube" width="26">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/_hex.community_/" target="_blank">
+              <img class="m-2" src="images/instagram.svg" alt="Follow us on Instagram" width="26">
+            </a>
+          </li>
+	
+        </ul>
+      </div>
+    </div>
+	   
+  </footer>
+</div>
+		  <!-- end of footer 2 -->
+       
+      </div>
+    </footer>
+    <!-- End of the grid -->
+	  
+	  
+
+  </body>
 </html>
