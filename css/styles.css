@@ -6,16 +6,29 @@
 
 body {
 	font-family: Raleway, sans-serif;
+	/* font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";*/
 	background-color: #FFFFFF;
 }
 
 /* Changing the background colour for the header */
 
 header {
-	background-color: #AE98FF;
+	background-color: #AE98FF; 
 }
 
 /* Changing the background color for the navigation bar */
+
+/* .container-fluid{
+	background-color:transparent
+	}	*/
+
+.landing{
+	background-color:transparent
+	}
+
+.shop{
+	background-color: #D3AFFF;
+	}
 
 .navbar {
 	background-color: #ffffff;
@@ -25,4 +38,4 @@ header {
 
 footer a:hover {
 	opacity: .5;
-}
+
