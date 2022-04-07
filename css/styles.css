@@ -38,18 +38,6 @@ h1 {text-align: center;}
 p {text-align: center;}
 div {text-align: center;}
 
-.products-wrapper{
-	text-size-adjust: 100%;
-    font-size: 16px;
-    font-family: Helvetica,Arial,sans-serif;
-    font-weight: normal;
-    line-height: 1;
-    color: #2b2b2b;
-    box-sizing: inherit;
-    margin: 0;
-    padding: 2.5vw;
-}
-
 /* Effect on social media buttons */
 
 footer a:hover {
