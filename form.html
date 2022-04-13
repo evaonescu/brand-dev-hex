@@ -56,19 +56,31 @@
     <!-- End of navigation bar -->
 	 
 	 <br>
-	  <form>
+	  <form target="_self">
   <div class="form-group row">
     <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-    <div class="col-sm-10">
+    <div class="col-sm-4">
       <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
     </div>
   </div>
-  <div class="form-group row">
-    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+	    <br><br>
+		 <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Submit sth</label>
+    <div class="col-sm-5">
+     <textarea class="form-control" name="message" rows="5" cols="45" type="text" placeholder="What inspired me to do this artwork..."></textarea>
     </div>
-  </div>
+  </div> 
+		   <br><br>
+		    <label for="myfile">Select a file:</label>
+  <input type="file" id="myfile" name="myfile">
+		  <br><br>
+		    <label for="homepage">Social URL:</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="url" id="homepage" name="homepage">
+		    <br><br>
+		  <label for="favcolor">Select your hex color:</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="color" id="favcolor" name="favcolor" value="#fff000">
+		    <br><br>
+		  
   <fieldset class="form-group">
     <div class="row">
       <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
@@ -93,9 +105,10 @@
         </div>
       </div>
     </div>
+	  <br><br>
   </fieldset>
   <div class="form-group row">
-    <div class="col-sm-2">Checkbox</div>
+    <div class="col-sm-2">Terms and considtions</div>
     <div class="col-sm-10">
       <div class="form-check">
         <input class="form-check-input" type="checkbox" id="gridCheck1">
@@ -105,27 +118,14 @@
       </div>
     </div>
   </div>
+		  <br><br>
   <div class="form-group row">
     <div class="col-sm-10">
-      <button type="submit" class="btn btn-primary">Sign in</button>
+      <button type="submit" class="btn btn-primary" onclick="alert('Your art has been submitted!')">Submit</button>
     </div>
   </div>
 </form>
 	<!-- new -->
-	  <form>
-		    <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe">
-		  <h5>feature</h5>
-	<input type="radio">
-		  <h5>Terms</h5>
-	<input type="checkbox">	
-		  <br>
-		  <h5>submit</h5>
-	 <input type="submit" value="Submit">	
-	  
-	  </form>
 	
 		       <!-- A footer with socials -->
 	 
