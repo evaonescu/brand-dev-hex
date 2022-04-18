@@ -1,12 +1,12 @@
 /* Importing a Google Font */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* Changing the main font and background colour */
 
 body {
 	/* font-family: Raleway, sans-serif; */
-	font-family: Inter; "sans-serif";
+	font-family: 'Inter', sans-serif;
 	/* font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";*/
 	background-color: #5B3FBF;
 }
@@ -91,14 +91,25 @@ text-align: center;
 .btn-secondary{
 	background-color: #EC408F;
 	}	
-
+.btn-secondary:hover{
+	background-color: #BE3273;
+	border: #EC408F;
+	}
 .btn-primary{
 	background-color: #EC408F;
 	border: #EC408F;
 	}	
-
+.btn-primary:hover{
+	background-color: #BE3273;
+	border: #EC408F;
+	}
 .btn-danger{
 	background-color: #EC408F;
+	border: #EC408F;
+	}	
+
+.btn-danger:hover{
+	background-color: #BE3273;
 	border: #EC408F;
 	}	
 	
