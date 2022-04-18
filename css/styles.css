@@ -7,7 +7,7 @@
 body {
 	font-family: Raleway, sans-serif;
 	/* font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";*/
-	background-color: #FFFFFF;
+	background-color: #5B3FBF;
 }
 
 .corporate{text-align: left;}
@@ -28,12 +28,12 @@ header {
 	}
 
 .shop{
-	background-color: #AE98FF;
+	background-color: #FAD734;
 	text-align: center;
 	}
 
 .navbar {
-	background-color: #ffffff;
+	background-color: #FFFFFF;
 }
 /* Effect on social media buttons */
 
@@ -73,4 +73,27 @@ footer a:hover {
 .shop2 {
 text-align: center;
 }
+	
+.bighero {
+	background-color: #FAD734;
+}
+
+.smallhero {
+		background-color: #5B3FBF;
+}	
+	
+.btn-secondary{
+	background-color: #EC408F;
+	}	
+
+.btn-primary{
+	background-color: #EC408F;
+	border: #EC408F;
+	}	
+
+.btn-danger{
+	background-color: #EC408F;
+	border: #EC408F;
+	}	
+	
 	
