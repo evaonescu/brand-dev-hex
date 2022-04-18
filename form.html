@@ -15,7 +15,8 @@
 
     <title>Bootstrap Base Template</title>
   </head>
-  <body>
+  <body style="background-color: #5B3FBF">
+	  
     <!-- Navigation bar, adapted from https://getbootstrap.com/docs/5.1/components/navbar/ -->
      <nav class="navbar navbar-expand-lg navbar-light fixed-top sticky-lg-top sticky">
       <div class="container-fluid">
@@ -56,61 +57,145 @@
     <!-- End of navigation bar -->
 	 
 	 <br>
-	  <form target="_self">
+	  <form target="_self" class="senddesign">
+		   <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label" style="color:white">Name</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="inputname" placeholder="Name">
+    </div>
+  </div>
+		   <br>
+	    <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label" style="color:white">Surname</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="inputsurnamename" placeholder="Surname">
+    </div>
+  </div>
+		   <br>
   <div class="form-group row">
-    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+    <label for="inputEmail3" class="col-sm-2 col-form-label" style="color:white">Email</label>
     <div class="col-sm-4">
       <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
     </div>
+	   <br>
   </div>
+		 
 	    <br><br>
-		 <div class="form-group row">
-    <label for="inputEmail3" class="col-sm-2 col-form-label">Submit sth</label>
+		    <label for="myfile" style="color:white">Submit your design</label>
+		 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="file" id="myfile" name="myfile">
+		  <br><br>
+		   <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label" style="color:white" >Write 3 words that describe your design</label>
+    <div class="col-sm-5">
+     <textarea class="form-control" name="message" rows="2" cols="45" type="text" placeholder="#meaningful #stuff"></textarea>
+    </div>
+  </div> 
+		   <!--hover info-->
+<div class="myDIV"><img src="images/info.png" height="20" alt="info logo"></div>
+<div class="hide">One of these will become the word displayed on the shoe after the #, in which the art will be framed.</div>
+	  <!-- end of hover info -->
+		  <br><br>
+		   <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label" style="color:white">What's its meaning? (optional)&nbsp;&nbsp;</label>
     <div class="col-sm-5">
      <textarea class="form-control" name="message" rows="5" cols="45" type="text" placeholder="What inspired me to do this artwork..."></textarea>
     </div>
   </div> 
-		   <br><br>
-		    <label for="myfile">Select a file:</label>
-		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <input type="file" id="myfile" name="myfile">
-		  <br><br>
-		    <label for="homepage">Social URL:</label>
-		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <input type="url" id="homepage" name="homepage">
-		    <br><br>
-		  <label for="favcolor">Select your hex color:</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	    <br><br>
+		  <label for="favcolor" style="color:white">Select your hex color<br>
+(optional) :</label> 
+		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <input type="color" id="favcolor" name="favcolor" value="#fff000">
 		    <br><br>
 		  
   <fieldset class="form-group">
     <div class="row">
-      <legend class="col-form-label col-sm-2 pt-0">Do you want to be featured in our artist section?</legend>
+      <legend class="col-form-label col-sm-2 pt-0" style="color:white">Do you want to be featured in our <a href="index.html #artists" style="color:white">artist section</a>?</legend> 
 
-      <div class="col-sm-10">
+		
+		<div class="col-sm-10">
         <div class="form-check">
           <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-          <label class="form-check-label" for="gridRadios1">
+          <label class="form-check-label" for="gridRadios1" style="color:white">
             Yes
           </label>
         </div>
         <div class="form-check">
           <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-          <label class="form-check-label" for="gridRadios2">
+          <label class="form-check-label" for="gridRadios2" style="color:white">
             No
           </label>
         </div>
+			
       </div>
+		
+		
+		
     </div>
+	<!--button info 
+
+		</div><div class="col-md-12">
+    <div class="info">
+      <i class="icon-info-sign"></i>
+		<img src="images/info.png" height="20" alt="info logo">
+      <span class="extra-info"> 
+        A little column extra info. Aaand just a little bit more
+      </span>
+		</div>
+   <!--end button info -->  
+	  
+	  <br><br>
+	  <!-- collapsible -->
+    <button type="button" class="collapsible" style="color:black">Artist Details (complete the fields belowe if you selected "Yes" at the previous question)</button>
+<div class="content">
+	 <br><br>
+	<label for="homepage" style="color:white">Social Media URL:</label>
+		 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="url" id="homepage" name="homepage">
+		    <br><br>
+  <br><br>
+		   <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label" style="color:white">Tell us a few word about you!&nbsp;&nbsp;</label>
+    <div class="col-sm-5">
+     <textarea class="form-control" name="message" rows="5" cols="45" type="text" placeholder="Beginner artist and professional Netflix binger..."></textarea>
+    </div>
+			   
+  </div> 
+
+	  <br><br>
+		    <label for="mypic" style="color:white">Upload your pic</label>
+		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="file" id="mypic" name="mypic">
+		  <br><br>
+    </div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active2");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+	   <!-- end of collapsible -->
 	  <br><br>
   </fieldset>
   <div class="form-group row">
-    <div class="col-sm-2">Terms and considtions</div>
+    <div class="col-sm-2" style="color:white">Terms and conditions</div>
     <div class="col-sm-10">
       <div class="form-check">
         <input class="form-check-input" type="checkbox" id="gridCheck1">
-        <label class="form-check-label" for="gridCheck1">
-        I agree with the <a href="landing.html">terms and conditions </a></label>
+        <label class="form-check-label" for="gridCheck1" style="color:white">
+        I agree with the <a href="landing.html" style="color:antiquewhite">terms and conditions </a></label>
       </div>
     </div>
   </div>
@@ -121,6 +206,8 @@
     </div>
   </div>
 </form>
+	  
+	  
 	<!-- new -->
 	
 		       <!-- A footer with socials -->
