@@ -169,6 +169,12 @@ text-align: center;
   font-size: 15px;
 }
 
+.contactus{
+	 padding-top: 50px;
+  padding-right: 60px;
+  padding-left: 60px; 
+}
+
 .active2, .collapsible:hover {
   background-color: #FFF6F6;
 }
@@ -180,3 +186,18 @@ text-align: center;
 	background-color: #6F4FE1;
   }
 
+    /* Set additional styling options for the columns*/
+    .column {
+    float: left;
+    width: 50%;
+		background-color: transparent;
+		text-align: center;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+		background-color: transparent;
+		text-align: justify;
+    }
